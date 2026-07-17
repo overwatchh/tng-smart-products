@@ -26,7 +26,12 @@
     <meta property="twitter:image:height" content="660">
 
     <!-- Client-side Redirect to PDF -->
-    <meta http-equiv="refresh" content="0;url=catalog.pdf">
+    <script type="text/javascript">
+        window.location.replace("catalog.pdf");
+    </script>
+    <noscript>
+        <meta http-equiv="refresh" content="1;url=catalog.pdf">
+    </noscript>
 </head>
 <body style="background-color: #0b0d14; color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; text-align: center;">
     <div>
